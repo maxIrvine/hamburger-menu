@@ -1,5 +1,7 @@
-var HAMBURGER_BUTTON = '[hamburger-button="target"]';
+var HAMBURGER_BUTTON_DIV = '[hamburger-button="target"]';
+var HAMBURGER_BUTTON = '[hamburger-button="trigger"]';
 var HAMBURGER_MENU = '[hamburger-menu="list"]';
+var MENU_ITEM = '[hamburger-item="list"';
 
 var menuItems = [
     {
@@ -26,12 +28,31 @@ function buildMenu() {
         //a tag
         var element = document.createElement('a');
         element.setAttribute('href', item.href);
+        element.setAttribute('hamburger-item', "list");
         element.textContent = item.text;
+        divToAdd.appendChild(element);
+    });
+}
+
+function listener() {
+    buildMenu();
+    var div = document.querySelector(HAMBURGER_MENU);
+    var txtArray = [].slice.call(document.querySelectorAll(MENU_ITEM));
+    var hamburgerButton = document.querySelector(HAMBURGER_BUTTON);
+    hamburgerButton.addEventListener('click', function(){
+        event.preventDefault();
+        console.log("Clicked");
+        div.classList.toggle('end');
+        txtArray.forEach(function (txt){
+            txt.classList.toggle('endText');
+        });
+        
+        
     });
 }
 
 function main() {
-    console.log("");
+    listener();
 }
 
 main();
