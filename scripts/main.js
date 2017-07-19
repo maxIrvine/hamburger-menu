@@ -20,4 +20,12 @@ var menuItems = [
     }
 ];
 
-
+function buildMenu() {
+    var divToAdd = document.querySelector(".drop-down-menu");
+    menuItems.forEach(function (item) {
+        //a tag
+        var element = document.createElement('a');
+        element.setAttribute('href', item.href);
+        element.textContent = item.text;
+    });
+}
