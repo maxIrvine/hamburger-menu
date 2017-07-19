@@ -12,3 +12,47 @@
     /*border: none;*/
     outline: none;
 }
+
+[hamburger-item="list"] {
+    color: white;
+    text-decoration: none;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    margin-left: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0px;
+    transition: all 1s ease-in-out;
+}
+
+.endText {
+    color: white;
+    text-decoration: none;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    margin-left: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.drop-down-menu {
+    width: 35px;
+    height: 0px;
+    display: flex;
+    flex-direction: column;
+    margin-top: -47px;
+    margin-left: 20px;
+    background-color: black;
+    transition: all 1s ease-in-out;
+    
+}
+
+.end {
+    transform: translate(0px, 0px);
+    width: 100px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 20px;
+    background-color: black;
+}
