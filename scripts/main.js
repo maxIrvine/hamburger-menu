@@ -37,12 +37,14 @@ function buildMenu() {
 function listener() {
     buildMenu();
     var div = document.querySelector(HAMBURGER_MENU);
+    var buttonDiv = document.querySelector(HAMBURGER_BUTTON_DIV);
     var txtArray = [].slice.call(document.querySelectorAll(MENU_ITEM));
     var hamburgerButton = document.querySelector(HAMBURGER_BUTTON);
     hamburgerButton.addEventListener('click', function(){
         event.preventDefault();
         console.log("Clicked");
         div.classList.toggle('end');
+        buttonDiv.classList.toggle("change");
         txtArray.forEach(function (txt){
             txt.classList.toggle('endText');
         });
