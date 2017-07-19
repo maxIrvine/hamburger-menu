@@ -1,3 +1,6 @@
+var HAMBURGER_BUTTON = '[hamburger-button="target"]';
+var HAMBURGER_MENU = '[hamburger-menu="list"]';
+
 var menuItems = [
     {
         href: "http://apple.com",
@@ -16,3 +19,5 @@ var menuItems = [
         text: 'portfolio'
     }
 ];
+
+
