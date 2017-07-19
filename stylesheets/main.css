@@ -1,11 +1,14 @@
-.triple-bar {
-    margin-left: 20px;
-    margin-top: 20px;
-}
-
 .bar {
     width: 35px;
     height: 5px;
     background-color: black;
     margin: 6px 0px;
+}
+
+.hamburger-button {
+    margin-top: 20px;
+    margin-left: 20px;
+    background: none;
+    /*border: none;*/
+    outline: none;
 }
