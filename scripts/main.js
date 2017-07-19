@@ -29,3 +29,9 @@ function buildMenu() {
         element.textContent = item.text;
     });
 }
+
+function main() {
+    console.log("");
+}
+
+main();
